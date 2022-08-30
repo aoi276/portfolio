@@ -21,6 +21,7 @@ ul, li {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: top;
 }
 
 body {
@@ -91,9 +92,31 @@ body {
 }
 .content-item-card {
   width: 33.3333333333%;
+  background-color: #000;
+  position: relative;
+}
+.content-item-card > img {
+  width: 100%;
   height: 305px;
+}
+.content-item-card-hover {
   background-color: #fff;
-  border: 1px solid #000;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  opacity: 0;
+  width: 60%;
+  height: 60%;
+  transition: all 0.6s ease;
+  text-align: center;
+}
+.content-item-card-hover > p {
+  color: #000;
+  font-weight: bold;
+  padding-top: 23%;
+}
+.content-item-card-hover:hover {
+  opacity: 1;
 }
 .content-btn {
   text-align: center;
@@ -112,7 +135,7 @@ body {
   text-align: center;
   outline: none;
   /*アニメーションの指定*/
-  transition: ease 0.2s;
+  transition: ease 0.5s;
   /*ボタン内spanの形状*/
 }
 .content-btn-more > span {
