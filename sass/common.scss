@@ -1,0 +1,15 @@
+// 共通CSS
+$main: #EFEFF0;
+$text: #1A1919;
+
+a {
+	color: $text;
+}
+
+ul, li {
+	font-size: 1.2rem;
+}
+
+body {
+	background-color: $main;
+}

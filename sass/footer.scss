@@ -1,39 +1,5 @@
-//リセットCSS
-*, *::before, *::after {
-	box-sizing: border-box;
-}
+@import url("../css/common.css");
 
-html, body {
-	padding: 0;
-	margin: 0;
-}
-//リセットCSS ここまで
-
-// 共通CSS
-$main: #EFEFF0;
-$text: #1A1919;
-
-a {
-	color: $text;
-	text-decoration: none;
-}
-
-ul, li {
-	list-style: none;
-	font-size: 1.2rem;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
-}
-// 共通CSS ここまで
-
-body {
-	background-color: $main;
-}
-
-//footer
 .footer {
 	display: flex;
 	padding: 0 5% 2px 3%;
